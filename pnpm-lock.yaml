@@ -2,21 +2,31 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/express': ^4.17.13
+  '@types/fxjs': ^0.15.0
   '@types/node': ^16.11.6
+  cors: ^2.8.5
+  dotenv: ^10.0.0
   eslint: ^8.2.0
   express: ^4.17.1
+  fxjs: ^0.21.3
   nodemon: ^2.0.14
   prettier: ^2.4.1
   rimraf: ^3.0.2
   tsconfig-paths: ^3.11.0
+  typedi: ^0.10.0
   typescript: ^4.4.4
 
 dependencies:
+  cors: 2.8.5
+  dotenv: 10.0.0
   express: 4.17.1
+  fxjs: 0.21.3
   rimraf: 3.0.2
+  typedi: 0.10.0
 
 devDependencies:
   '@types/express': 4.17.13
+  '@types/fxjs': 0.15.0
   '@types/node': 16.11.7
   eslint: 8.2.0
   nodemon: 2.0.15
@@ -25,6 +35,14 @@ devDependencies:
   typescript: 4.4.4
 
 packages:
+
+  /@babel/runtime-corejs3/7.16.3:
+    resolution: {integrity: sha512-IAdDC7T0+wEB4y2gbIL0uOXEYpiZEeuFUTVbdGq+UwCcF35T/tS8KrmMomEwEc5wBbyfH3PJVpTSUqrhPDXFcQ==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      core-js-pure: 3.19.1
+      regenerator-runtime: 0.13.9
+    dev: false
 
   /@eslint/eslintrc/1.0.4:
     resolution: {integrity: sha512-h8Vx6MdxwWI2WM8/zREHMoqdgLNXEL4QX3MWSVMdyNJGvXVOs+6lp+m2hc3FnuMHDc4poxFNI20vCk0OmI4G0Q==}
@@ -98,6 +116,10 @@ packages:
       '@types/express-serve-static-core': 4.17.25
       '@types/qs': 6.9.7
       '@types/serve-static': 1.13.10
+    dev: true
+
+  /@types/fxjs/0.15.0:
+    resolution: {integrity: sha512-0DJytjz2PjgNflOpc2b6WPVpU9IDk8AucfHgMj553gi7CBGsdzhSgOy64fmcHLKqh60ZKLnq2FHMyKJStqNJxA==}
     dev: true
 
   /@types/json5/0.0.29:
@@ -365,6 +387,19 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
+  /core-js-pure/3.19.1:
+    resolution: {integrity: sha512-Q0Knr8Es84vtv62ei6/6jXH/7izKmOrtrxH9WJTHLCMAVeU+8TF8z8Nr08CsH4Ot0oJKzBzJJL9SJBYIv7WlfQ==}
+    requiresBuild: true
+    dev: false
+
+  /cors/2.8.5:
+    resolution: {integrity: sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==}
+    engines: {node: '>= 0.10'}
+    dependencies:
+      object-assign: 4.1.1
+      vary: 1.1.2
+    dev: false
+
   /cross-spawn/7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
     engines: {node: '>= 8'}
@@ -445,6 +480,11 @@ packages:
     dependencies:
       is-obj: 2.0.0
     dev: true
+
+  /dotenv/10.0.0:
+    resolution: {integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==}
+    engines: {node: '>=10'}
+    dev: false
 
   /duplexer3/0.1.4:
     resolution: {integrity: sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI=}
@@ -714,6 +754,12 @@ packages:
   /functional-red-black-tree/1.0.1:
     resolution: {integrity: sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=}
     dev: true
+
+  /fxjs/0.21.3:
+    resolution: {integrity: sha512-8VubsQoPEm2bA+Q80Bh12cTWCnGpIi1T6e6Ot61ZfqbB3yoickB+//HJDpq+okdmu9gNQmnN7VpfRaT/aBdwXA==}
+    dependencies:
+      '@babel/runtime-corejs3': 7.16.3
+    dev: false
 
   /get-stream/4.1.0:
     resolution: {integrity: sha512-GMat4EJ5161kIy2HevLlr4luNjBgvmj413KaQA7jt4V8B4RDsfpHk7WQ9GVqfYyyx8OS/L66Kox+rJRNklLK7w==}
@@ -1142,6 +1188,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /object-assign/4.1.1:
+    resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   /on-finished/2.3.0:
     resolution: {integrity: sha1-IPEzZIGwg811M3mSoWlxqi2QaUc=}
     engines: {node: '>= 0.8'}
@@ -1299,6 +1350,10 @@ packages:
     dependencies:
       picomatch: 2.3.0
     dev: true
+
+  /regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+    dev: false
 
   /regexpp/3.2.0:
     resolution: {integrity: sha512-pq2bWo9mVD43nbts2wGv17XLiNLya+GklZ8kaDLV2Z08gDCsGpnKn9BFMepvWuHCbyVvY7J5o5+BVvoQbmlJLg==}
@@ -1530,6 +1585,10 @@ packages:
     dependencies:
       is-typedarray: 1.0.0
     dev: true
+
+  /typedi/0.10.0:
+    resolution: {integrity: sha512-v3UJF8xm68BBj6AF4oQML3ikrfK2c9EmZUyLOfShpJuItAqVBHWP/KtpGinkSsIiP6EZyyb6Z3NXyW9dgS9X1w==}
+    dev: false
 
   /typescript/4.4.4:
     resolution: {integrity: sha512-DqGhF5IKoBl8WNf8C1gu8q0xZSInh9j1kJJMqT3a94w1JzVaBU4EXOSMrz9yDqMT0xt3selp83fuFMQ0uzv6qA==}

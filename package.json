@@ -12,11 +12,16 @@
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "rimraf": "^3.0.2"
+    "fxjs": "^0.21.3",
+    "rimraf": "^3.0.2",
+    "typedi": "^0.10.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/fxjs": "^0.15.0",
     "@types/node": "^16.11.6",
     "eslint": "^8.2.0",
     "nodemon": "^2.0.14",

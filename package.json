@@ -16,12 +16,16 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "fxjs": "^0.21.3",
+    "morgan": "^1.10.0",
     "rimraf": "^3.0.2",
     "typedi": "^0.10.0"
   },
   "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
     "@types/fxjs": "^0.15.0",
+    "@types/morgan": "^1.9.3",
     "@types/node": "^16.11.6",
     "eslint": "^8.2.0",
     "nodemon": "^2.0.14",

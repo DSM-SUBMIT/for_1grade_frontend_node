@@ -10,6 +10,7 @@ specifiers:
   '@types/morgan': ^1.9.3
   '@types/node': ^16.11.6
   bcrypt: ^5.0.1
+  class-transformer: ^0.4.0
   class-validator: ^0.13.1
   cors: ^2.8.5
   dotenv: ^10.0.0
@@ -30,6 +31,7 @@ specifiers:
 
 dependencies:
   bcrypt: 5.0.1
+  class-transformer: 0.4.0
   class-validator: 0.13.1
   cors: 2.8.5
   dotenv: 10.0.0
@@ -475,6 +477,10 @@ packages:
   /ci-info/2.0.0:
     resolution: {integrity: sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==}
     dev: true
+
+  /class-transformer/0.4.0:
+    resolution: {integrity: sha512-ETWD/H2TbWbKEi7m9N4Km5+cw1hNcqJSxlSYhsLsNjQzWWiZIYA1zafxpK9PwVfaZ6AqR5rrjPVUBGESm5tQUA==}
+    dev: false
 
   /class-validator/0.13.1:
     resolution: {integrity: sha512-zWIeYFhUitvAHBwNhDdCRK09hWx+P0HUwFE8US8/CxFpMVzkUK8RJl7yOIE+BVu2lxyPNgeOaFv78tLE47jBIg==}

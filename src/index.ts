@@ -3,6 +3,9 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
+import { router } from 'src/routes';
+import { createConnection } from 'typeorm';
+import { User } from 'src/auth/entities/user.entity';
 
 async function bootstrap() {
   const app = express();
